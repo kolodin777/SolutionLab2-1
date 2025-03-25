@@ -1,8 +1,11 @@
-﻿#include <iostream>
+#include <iostream>
 #include "MyClass.h"
 
 int main() {
-    MyClass myObject(10, 2);
+    int x, y;
+    std::cout << "Enter two numbers:";
+    std::cin >> x >> y;
+    MyClass myObject(x, y);
     std::cout << myObject.toString() << std::endl;
 
     int result = myObject.divide();
